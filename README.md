@@ -128,3 +128,99 @@ var opts = {
 }
 ```
 
+```js
+const user = {
+  name: 'Jane Doe', age:30
+  username: 'jdoe86'
+}
+
+const user = { name: 'Jane Doe', age: 30, username: 'jdoe86' }
+
+const user = {
+  name: 'Jane Doe',
+  age: 30,
+  username: 'jdoe86'
+}
+
+if (user) {
+  const name = getName()
+}
+
+if (user) {
+  const name = getName()
+}
+
+var score = 100
+function game () {
+  score: while (true) {
+    score -= 10
+    if (score > 0) continue score
+    break
+  }
+}
+
+const name = function () {
+  getName()
+}.bind(user)
+
+const name = function () {
+  this.getName()
+}.bind(user)
+
+var nums = new Array(1, 2, 3)
+var nums = [1, 2, 3]
+
+function foo (n) {
+  if (n <= 0) return
+  
+  arguments.callee(n - 1)
+}
+
+function foo (n) {
+  if (n <= 0) return
+  
+  foo(n - 1)
+}
+
+var person = {
+  set name (value) {
+    this._name = value
+  }
+}
+
+var person = {
+  set name (value) {
+    this._name = value
+  },
+  get name () {
+    return this._name
+  }
+}
+
+class Dog {
+  constructor () {
+    super()
+  }
+}
+
+class Dog extends Mammal {
+  constructor () {
+    super()
+  }
+}
+
+var nums = new Array(1, 2, 3)
+var nums = [1, 2, 3]
+
+function foo (n) {
+  if (n <= 0) return
+  
+  arguments.callee(n - 1)
+}
+
+function foo (n) {
+  if (n <= 0) return
+  
+  foo(n - 1)
+}
+```
